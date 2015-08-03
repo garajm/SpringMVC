@@ -9,7 +9,7 @@ public class OffersController {
 
 	@RequestMapping("/")
 	public String showHome(Model model) {
-		model.addAttribute("name", "Michael and Martin");
+		model.addAttribute("name", "Michael");
 		return "home";
 	}
 }
