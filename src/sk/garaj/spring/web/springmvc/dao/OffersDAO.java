@@ -20,10 +20,6 @@ public class OffersDAO {
 
 	private NamedParameterJdbcTemplate jdbc;
 	
-	public OffersDAO() {
-		System.out.println("Success");
-	}
-
 	@Autowired
 	public void setDataSource(DataSource jdbc) {
 		this.jdbc = new NamedParameterJdbcTemplate(jdbc);

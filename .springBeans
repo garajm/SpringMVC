@@ -9,6 +9,7 @@
 	<configs>
 		<config>WebContent/WEB-INF/conf/dao-context.xml</config>
 		<config>WebContent/WEB-INF/conf/SpringMVC-servlet.xml</config>
+		<config>WebContent/WEB-INF/conf/service-context.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
