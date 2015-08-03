@@ -9,7 +9,8 @@
 <body>
 Hi, there.
 
-Session: <%= session.getAttribute("name") %>
+ModelandView <%= request.getAttribute("name") %> <p/>
 
+Request: ${name}
 </body>
 </html>
