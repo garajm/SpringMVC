@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,26 +9,26 @@
 <link href="${pageContext.request.contextPath}/static/css/stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<form method="post"
-		action="${pageContext.request.contextPath}/doCreate">
+	<form:form method="post"
+		action="${pageContext.request.contextPath}/doCreate" commandName="offer">
 		<table class="formTable">
 			<tr>
 				<td><label>Name</label></td>
-				<td><input type="text" name="name" /></td>
+				<td><form:input type="text" name="name" path="name"/></td>
 			</tr>
 			<tr>
 				<td><label>Email</label></td>
-				<td><input type="text" name="email" /></td>
+				<td><form:input type="text" name="email" path="email"/></td>
 			</tr>
 			<tr>
 				<td><label>Text</label></td>
-				<td><textarea rows="10" name="text"></textarea></td>
+				<td><form:textarea rows="10" name="text" path="text"></form:textarea></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><button type="submit">Submit</button></td>
+				<td><form:button type="submit">Submit</form:button></td>
 			</tr>
 		</table>
-	</form>
+	</form:form>
 </body>
 </html>
