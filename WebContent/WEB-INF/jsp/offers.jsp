@@ -6,13 +6,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Offers Page</title>
 </head>
 <body>
-
+<table>
+<tr>
+	<th>Name</th>
+	<th>Email</th>
+	<th>Offer</th>
+</tr>
 <c:forEach var="offer" items="${offers}">
-	<p><c:out value="${offer}"/></p>
+	<tr>
+	<td><c:out value="${offer.name}"/></td>
+	<td><c:out value="${offer.email}"/></td>
+	<td><c:out value="${offer.text}"/></td>
+	</tr>
 </c:forEach>
-
+</table>
 </body>
 </html>

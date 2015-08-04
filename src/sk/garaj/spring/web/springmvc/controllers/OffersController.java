@@ -47,7 +47,9 @@ public class OffersController {
 	public String doCreate(Model model, @Valid Offer offer, BindingResult result) {
 		if(result.hasErrors()) {
 			return "addOffer";
-		} 		
+		}
+		
+		System.out.println(offersService.saveOffer(offer));
 
 		return "offerCreated";
 	}

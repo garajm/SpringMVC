@@ -17,5 +17,9 @@ public class OffersService {
 	public List<Offer> getCurrent() {
 		return offersDao.getOffers();
 	}
+	
+	public boolean saveOffer(Offer offer) {
+		return offersDao.create(offer);
+	}
 
 }

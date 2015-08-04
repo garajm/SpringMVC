@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Successfully created Offer
+	Successfully created Offer: <a href="${pageContext.request.contextPath}/offers">Show Offers</a>
 </body>
 </html>
