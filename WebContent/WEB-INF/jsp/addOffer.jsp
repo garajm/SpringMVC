@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="get" action="${pageContext.request.contextPath}/doCreate">
+	<form method="post" action="${pageContext.request.contextPath}/doCreate">
 		<table>
 			<tr>
 				<td><label>Name</label></td>
@@ -19,7 +19,7 @@
 			</tr>
 			<tr>
 				<td><label>Text</label></td>
-				<td><textarea name="text"></textarea></td>
+				<td><textarea rows="10" name="text"></textarea></td>
 			</tr>
 			<tr>
 				<td><button type="submit">Submit</button></td>
