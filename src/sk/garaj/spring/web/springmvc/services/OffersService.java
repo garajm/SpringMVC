@@ -22,4 +22,9 @@ public class OffersService {
 		return offersDao.create(offer);
 	}
 
+	public void throwTestException() {
+		offersDao.getOffer(9999);
+		
+	}
+
 }

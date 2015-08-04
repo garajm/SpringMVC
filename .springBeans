@@ -10,6 +10,7 @@
 		<config>WebContent/WEB-INF/conf/dao-context.xml</config>
 		<config>WebContent/WEB-INF/conf/service-context.xml</config>
 		<config>WebContent/WEB-INF/conf/servlet-context.xml</config>
+		<config>WebContent/WEB-INF/conf/handlers-context.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

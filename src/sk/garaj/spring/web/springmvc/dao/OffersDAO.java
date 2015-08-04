@@ -68,7 +68,7 @@ public class OffersDAO {
 	public Offer getOffer(int id) {
 		MapSqlParameterSource params =  new MapSqlParameterSource("id", id);
 		
-		List<Offer> offers = jdbc.query("select * from offers where id = :id", params, new RowMapper<Offer>() {
+		return jdbc.queryForObject("select * from offers where id = :id", params, new RowMapper<Offer>() {
 			public Offer mapRow(ResultSet rs, int rowNum) throws SQLException {
 				Offer offer = new Offer();
 				
@@ -81,8 +81,6 @@ public class OffersDAO {
 			}
 
 		});
-		
-		return offers.size() != 0 ? offers.get(0) : null;
 	}
 
 }
