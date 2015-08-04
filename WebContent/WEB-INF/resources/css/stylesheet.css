@@ -14,3 +14,8 @@ label {
 	text-align: right;
 	vertical-align: top;	
 }
+
+.error {
+	font-size: small;
+	color: red;
+}

@@ -14,15 +14,15 @@
 		<table class="formTable">
 			<tr>
 				<td><label>Name</label></td>
-				<td><form:input type="text" name="name" path="name"/></td>
+				<td><form:input type="text" name="name" path="name"/><br/><form:errors path="name" cssClass="error"></form:errors></td>
 			</tr>
 			<tr>
 				<td><label>Email</label></td>
-				<td><form:input type="text" name="email" path="email"/></td>
+				<td><form:input type="text" name="email" path="email"/><br/><form:errors path="email" cssClass="error"></form:errors></td>
 			</tr>
 			<tr>
 				<td><label>Text</label></td>
-				<td><form:textarea rows="10" name="text" path="text"></form:textarea></td>
+				<td><form:textarea rows="10" name="text" path="text"></form:textarea><br/><form:errors path="text" cssClass="error"></form:errors></td>
 			</tr>
 			<tr>
 				<td></td>
