@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.formTable {
+	padding: 10px;
+	border: 1px solid black;
+}
+
+input, textarea {
+	width: 200px;
+	margin-top: 10px;
+}
+
+label {
+	text-align: right;
+	vertical-align: top;	
+}

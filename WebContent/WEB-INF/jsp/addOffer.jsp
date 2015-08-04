@@ -4,27 +4,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Add a Offer</title>
+<link href="${pageContext.request.contextPath}/static/css/stylesheet.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-	<form method="post" action="${pageContext.request.contextPath}/doCreate">
-		<table>
+	<form method="post"
+		action="${pageContext.request.contextPath}/doCreate">
+		<table class="formTable">
 			<tr>
 				<td><label>Name</label></td>
-				<td><input type="text" name="name"/></td>
+				<td><input type="text" name="name" /></td>
 			</tr>
 			<tr>
 				<td><label>Email</label></td>
-				<td><input type="text" name="email"/></td>
+				<td><input type="text" name="email" /></td>
 			</tr>
 			<tr>
 				<td><label>Text</label></td>
 				<td><textarea rows="10" name="text"></textarea></td>
 			</tr>
 			<tr>
+				<td></td>
 				<td><button type="submit">Submit</button></td>
 			</tr>
-		</table>	
+		</table>
 	</form>
 </body>
 </html>
