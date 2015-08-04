@@ -1,8 +1,14 @@
 package sk.garaj.spring.web.springmvc.dao;
 
+import javax.validation.constraints.Size;
+
 public class Offer {
 	private int id;
+	
+	@Size(min=5, max=100)
 	private String name;
+	
+	
 	private String email;
 	private String text;
 	
