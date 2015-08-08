@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import sk.garaj.spring.web.springmvc.dao.Offer;
 import sk.garaj.spring.web.springmvc.services.OffersService;
 
-@Controller
+@Controller("offersController")
 public class OffersController {
 	
 	@Autowired

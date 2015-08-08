@@ -24,7 +24,5 @@ public class OffersService {
 
 	public void throwTestException() {
 		offersDao.getOffer(9999);
-		
 	}
-
 }
