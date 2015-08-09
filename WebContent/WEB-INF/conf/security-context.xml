@@ -5,5 +5,25 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-
+	
+	<security:authentication-manager>
+		<security:authentication-provider>
+			<security:user-service>
+				<security:user authorities="admin" name="admin"
+					password="aaa" />
+				<security:user name="user" authorities="user"
+					password="aaa" />
+			</security:user-service>
+		</security:authentication-provider>
+	</security:authentication-manager>
+	<security:http auto-config="false" use-expressions="true">
+		<security:intercept-url pattern="/addOffer" access="isAuthenticated()" />
+		<security:intercept-url pattern="/doCreate" access="isAuthenticated()" />
+		<security:intercept-url pattern="/offerCreated" access="isAuthenticated()" />
+		<security:intercept-url pattern="/" access="permitAll" />
+		<security:intercept-url pattern="/offers" access="permitAll" />
+		<security:intercept-url pattern="/**" access="denyAll" />
+		<security:form-login />
+		
+	</security:http>
 </beans>
