@@ -12,6 +12,7 @@
 		<config>WebContent/WEB-INF/conf/servlet-context.xml</config>
 		<config>WebContent/WEB-INF/conf/handlers-context.xml</config>
 		<config>WebContent/WEB-INF/conf/aspects-context.xml</config>
+		<config>WebContent/WEB-INF/conf/security-context.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
