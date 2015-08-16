@@ -26,11 +26,11 @@
 			</tr>
 			<tr>
 				<td><label>Confirm password</label></td>
-				<td><form:input type="text" name="password" path="password"/><br/><form:errors path="password" cssClass="error"></form:errors></td>
+				<td><input type="text" name="confirmPassword"/></td>
 			</tr>
 			<tr>
 				<td></td>
-				<td><form:button type="submit">Submit</form:button></td>
+				<td><form:button type="submit">Create Account</form:button></td>
 			</tr>
 		</table>
 	</form:form>
